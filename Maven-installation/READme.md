@@ -26,6 +26,8 @@ sudo yum install java-11-openjdk-devel java-1.8.0-openjdk-devel -y
 java -version
 git --version
 ```
+*latest maven version  -
+https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip
 
 ## 2. Download, extract and Install Maven
 ``` sh
@@ -42,7 +44,7 @@ export M2_HOME=/opt/maven
 export PATH=$PATH:$M2_HOME/bin
 ```
 ## .#Step4) Refresh the profile file and Verify if maven is running
-```sh
+```shi
 source ~/.bash_profile
 mvn -version
 ```
