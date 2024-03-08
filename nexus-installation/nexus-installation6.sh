@@ -56,7 +56,7 @@ access nexus on the browser
 34.229.62.93:8081
 userName  --- ADMIN
 Password   ADMIN123
-
+**** Your default Nexus password is located here : /opt/sonatype-work/nexus3/admin.password
 <<Troubleshooting
 ---------------------
 nexus service is not starting?
