@@ -27,15 +27,15 @@ java -version
 git --version
 ```
 *latest maven version  -
-https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip
+https://maven.apache.org/download.cgi
 
 ## 2. Download, extract and Install Maven
 ``` sh
 #Step1) Download the Maven Software
-sudo wget https://dlcdn.apache.org/maven/maven-3/3.8.7/binaries/apache-maven-3.8.7-bin.zip
-sudo unzip apache-maven-3.8.7-bin.zip
-sudo rm -rf apache-maven-3.8.7-bin.zip
-sudo mv apache-maven-3.8.7/ maven
+sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.8/binaries/apache-maven-3.9.8-bin.zip
+sudo unzip apache-maven-3.9.8-bin.zip
+sudo rm -rf apache-maven-3.9.8-bin.zip
+sudo mv apache-maven-3.9.8/ maven
 ```
 ## .#Step3) Set Environmental Variable  - For Specific User eg ec2-user
 ``` sh
