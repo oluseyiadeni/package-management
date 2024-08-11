@@ -49,4 +49,5 @@ export PATH=$PATH:$M2_HOME/bin
 source ~/.bash_profile
 mvn -version
 ```
+## Now switch from Maven directory to ec2-user home directory and git clone Project Repo
 
