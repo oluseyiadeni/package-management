@@ -5,18 +5,17 @@
 # become the root / admin user via: sudo su -
 #1. Create nexus user to manage the nexus
 # As a good security practice, Nexus is not advised to run nexus service as a root user, so create a new user called nexus and grant sudo access to manage nexus services as follows.
-
-useradd nexus
+sudo hostnamectl set-hostname nexus
+sudo useradd nexus
 
 #4 Give sudo access to nexus user
-
 sudo echo "nexus ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/nexus
 sudo su - nexus
 
-cd /opt
+
 
 # 1.Install prerequisit: JAVA, git, unzip
-
+cd /opt
 sudo yum install wget git nano unzip -y
 sudo yum install java-11-openjdk-devel java-1.8.0-openjdk-devel -y
 
@@ -24,9 +23,9 @@ sudo yum install java-11-openjdk-devel java-1.8.0-openjdk-devel -y
 # 2. Download nexus software and extract it (unzip)
 
 sudo wget http://download.sonatype.com/nexus/3/nexus-3.15.2-01-unix.tar.gz 
-
 sudo tar -zxvf nexus-3.15.2-01-unix.tar.gz
 mv /opt/nexus-3.15.2-01 /opt/nexus
+sudo rm -rf nexus-3.15.2-01-unix.tar.gz
 
 
 #5 Change the owner and group permissions to /opt/nexus and /opt/sonatype-work directories.
